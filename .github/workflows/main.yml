@@ -25,6 +25,6 @@ jobs:
         uses: mtanzi/action-automerge@v1
         id: merge-UK
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.PAT_TOKEN }}
           source: 'main'
           target: 'dev'
