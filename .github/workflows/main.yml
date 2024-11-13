@@ -18,12 +18,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:  # Отступ исправлен
+    steps:
       - name: checkout
         uses: actions/checkout@v2
       - name: merge
         uses: mtanzi/action-automerge@v1
-        id: merge-UK
+        id: merge-dev
         with:
           github_token: ${{ secrets.PAT_TOKEN }}
           source: 'main'
